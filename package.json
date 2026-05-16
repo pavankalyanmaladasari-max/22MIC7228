@@ -1,0 +1,16 @@
+{
+  "name": "22mic7228",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "logging_middleware",
+    "notification_app_be",
+    "notification_app_fe"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:be": "npm run build -w logging_middleware && npm run dev -w notification_app_be",
+    "dev:fe": "npm run build -w logging_middleware && npm run dev -w notification_app_fe",
+    "priority": "npm run priority -w notification_app_be"
+  }
+}

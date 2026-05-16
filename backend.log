@@ -1,0 +1,15 @@
+
+> 22mic7228@1.0.0 dev:be
+> npm run build -w logging_middleware && npm run dev -w notification_app_be
+
+
+> @notification/logging-middleware@1.0.0 build
+> tsc -p tsconfig.json
+
+
+> notification_app_be@1.0.0 dev
+> tsx watch src/server.ts
+
+Backend listening on http://localhost:4000
+5:42:45 pm [tsx] change in ./..\logging_middleware\dist\index.js Restarting...
+cBackend listening on http://localhost:4000
